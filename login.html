@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
+    <title>Final_Mouse</title>
+</head>
+
+<body class="bg-gray-100" style="font-family: Manrope">
+    <div class=" mx-auto ">
+        <div class="lg:flex w-full  ">
+            <div
+                class="w-full bg-gray-100  flex-cols flex justify-center items-center py-18 h-screen lg:p-0 md:px-12 px-5">
+                <div class="mx-auto lg:w-[395px] w-full my-auto " id="authentication-modal" tabindex="-1"
+                    aria-hidden="true">
+                    <img class="mx-auto" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20813113.svg" />
+                    <h1 class="text-center text-gray-800 font-bold text-[32px]">Login to your account</h1>
+                    <h1 class="text-xs text-gray-600 text-center font-normal mt-1.5">Please login to get access to the
+                        dashboard.
+                    </h1>
+                    <div class="mt-5">
+                        <label for="email" class="text-sm text-zinc-800">Email</label>
+                        <input type="email" name="email" id="email"
+                            class="border border-gray-200 text-zinc-400 text-sm rounded-lg outline-none w-full p-3 mt-1"
+                            placeholder="Enter your Email" required>
+                    </div>
+                    <div class="relative flex flex-wrap w-full">
+                        <div class="w-full relative">
+                            <div class="lg:mt-5 md:mt-8 mt-2">
+                                <div class="" x-data="{ show: true }">
+                                    <div class="relative">
+                                        <label for="Full name" class="text-sm text-gray-800">Password</label>
+                                        <input placeholder="Enter your password" :type="show ? 'password' : 'text'"
+                                            class="text-md border border-gray-200 text-gray-900 text-sm rounded-lg outline-none w-full p-3 mt-1" />
+                                        <div class="absolute inset-y-0 right-0 top-7 pr-3 flex items-center text-sm ">
+                                            <img @click="show = !show" :class="{'hidden': !show, 'block':show }"
+                                                src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20%2831%29.svg" />
+                                            <img @click="show = !show" :class="{'block': !show, 'hidden':show }"
+                                                src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20%2832%29.svg" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" flex items-center mt-3">
+                        <input id="default-checkbox" type="checkbox" value=""
+                            class="w-3 h-3 rounded focus:ring-blue-500 accent-gray-800" />
+                        <label for="default-checkbox" class="ml-1.5 text-gray-600 text-[12px]">Remember
+                            me
+                        </label>
+                    </div>
+                    <a href="analytics.html">
+                        <button type="submit"
+                            class="text-white font-semibold text-center text-base bg-[#18181B] hover:bg-gray-900 py-3 mt-5 w-full rounded-lg ">Login
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <!-- Black part -->
+            <div
+                class="w-full   bg-[#18181B] py-18  flex flex-col justify-center lg:items-end items-start  bg-[url('https://tuk-cdn.s3.amazonaws.com/can-uploader/Blend%20Group%201.png')] ">
+                <div class="">
+                    <h1 class="text-white font-bold text-3xl pt-16 ml-8 ">Repair Managment System</h1>
+                    <h1 class="text-white text-base font-normal ml-8 mt-3">Resolve customer support tickets efficiently
+                    </h1>
+                    <div class="">
+                        <img class="lg:w-[600px] w-full mb-24 "
+                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20813133%20%281%29.png">
+                    </div>
+                </div>
+            </div>
+            <!--Black part  -->
+        </div>
+    </div>
+
+</body>
+
+</html>
