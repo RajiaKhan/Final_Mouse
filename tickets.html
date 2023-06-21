@@ -1037,7 +1037,7 @@
 
                             <td>
                                 <div class="flex gap-x-5 px-4 py-6">
-                                    <div class="cursor-pointer">
+                                    <div class="cursor-pointer" onclick="toggleModal_11()">
                                         <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20%2842%29.svg" />
                                     </div>
                                     <div class="cursor-pointer" onclick="toggleModal_1()">
@@ -1088,676 +1088,895 @@
                                 </div>
                             </div>
                         </div>
-                        <tr class="border-b" id="remove1">
-                            <td
-                                class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
-                                0011754380...</td>
-                            <td
-                                class="lg:text-[10px] xl:text-xs 2xl:text-xs text-[10px] font-medium text-center text-zinc-900 py-2 lg:px-2 2xl:px-4 xl:px-4 px-3 bg-orange-200 rounded-[31px] flex items-center w-[84px] my-[18px] px-4">
-                                <div>In-queue</div>
-                            </td>
+                        <div class=" ">
+                            <div class="hidden bg-black/30 w-full backdrop-blur-sm absolute top-0  left-0 z-10 min-w-full min-h-full "
+                                id="modal_11">
+                                <div class="top-0 left-0 right-0 bottom-0 m-auto max-h-fit max-w-fit absolute">
+                                    <div class="p-8 rounded-xl bg-white  max-w-[756px]">
+                                        <div onclick="toggleModal_11()"
+                                            class="flex justify-end items-end cursor-pointer">
+                                            <img clas=""
+                                                src="https://tuk-cdn.s3.amazonaws.com/can-uploader/close%20%284%29.svg" />
+                                        </div>
 
-                            <td
-                                class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
-                                bill.sanders@example.com</td>
-                            <td
-                                class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
-                                Starlight-12
-                                Poseidon</td>
-                            <td
-                                class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
-                                15 May 2020 8:00 am
-                            </td>
+                                        <div class="flex justify-between pb-6">
+                                            <p class="text-zinc-900 text-2xl font-bold">Details</p>
+                                            <button onclick="closeEditTicket()" type="button" class="cursor-pointer ">
+                                                <span><img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/close.svg"
+                                                        class="w-3 h-3 -mt-4 -mr-4" alt=""></span>
+                                            </button>
+                                        </div>
+                                        <div class="md:flex justify-between items-center pb-6">
+                                            <p class="text-zinc-900 font-extrabold text-xl">RMA: 0011754379</p>
+                                            <button
+                                                class="p-2.5 text-sm text-zinc-600 rounded-md border border-zinc-200 md:w-[144px] w-full flex justify-between gap-x-2 md:mt-0 mt-3">
+                                                Status
+                                                <span><img
+                                                        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/chevron-down-outline1.svg"
+                                                        alt=""></span>
+                                            </button>
+                                        </div>
+                                        <p class="ext-base font-bold text-base mt-5">Diagnosis Info</p>
+                                        <div class="mb-8 py-5 px-5 bg-zinc-50 mt-5 rounded-xl border border-zinc-200"
+                                            style="box-shadow: 0px 0px 15px rgba(113, 113, 113, 0.1);">
+                                            <div class="mb-4">
+                                                <p class="text-xs text-zinc-900 font-semibold pb-2">
+                                                    Hardware name
+                                                </p>
+                                                <div class="py-3 px-4 border border-zinc-200 rounded-md bg-white">
+                                                    <p class="text-zinc-600 font-normal text-xs">Starligh-12 hades</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p class="text-xs text-zinc-900 font-semibold pb-2">
+                                                    Hardware Issue
+                                                </p>
+                                                <div class="py-3 px-4 border border-zinc-200 rounded-md bg-white pb-4">
+                                                    <p class="text-zinc-600 font-normal text-xs">
+                                                        Mouse scroll wheel is slow and annoying to deal with is it
+                                                        possible for your mouse to get slow? If it is how do you clean
+                                                        the
+                                                        inside of your mouse I can't find the screws to get inside of
+                                                        it.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rounded-md border border-zinc-200 bg-white py-3 px-4 flex items-center justify-between mb-3"
+                                            id="remove10">
+                                            <div class="flex gap-x-4 items-center">
+                                                <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Framed.svg"
+                                                    alt="">
+                                                <p class="text-sm font-medium text-zinc-900">Diagnosis 1</p>
+                                            </div>
+                                            <div class="flex gap-x-2">
+                                                <button type="button" class="cursor-ponter z-10"> <span> <img
+                                                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/edit%20button.svg"
+                                                            alt=""></span></button>
+                                                <button type="button" class="cursor-ponter z-10"
+                                                    onclick="myFunction10()"> <span> <img
+                                                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/delete.svg"
+                                                            alt=""></span></button>
 
-                            <td>
-                                <div class="flex gap-x-5 px-4 py-6">
-                                    <div class="cursor-pointer">
-                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20%2842%29.svg" />
-                                    </div>
-                                    <div class="cursor-pointer" onclick="toggleModal_2()">
-                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20%2843%29.svg" />
+                                            </div>
+                                        </div>
+                                        <div class="rounded-md border border-zinc-200 bg-white py-3 px-4 flex items-center justify-between mb-6"
+                                            id="remove11">
+                                            <div class="flex gap-x-4 items-center">
+                                                <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Framed.svg"
+                                                    alt="">
+                                                <p class="text-sm font-medium text-zinc-900">Diagnosis 1</p>
+                                            </div>
+                                            <div class="flex gap-x-2">
+                                                <button type="button" class="cursor-ponter z-10"> <span>
+                                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/edit%20button.svg"
+                                                            alt="">
+                                                    </span>
+                                                </button>
+                                                <button type="button" class="cursor-ponter z-10"
+                                                    onclick="myFunction11()"> <span> <img
+                                                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/delete.svg"
+                                                            alt=""></span></button>
+
+
+                                            </div>
+                                        </div>
+                                        <button
+                                            class="px-3 py-3 lg:w-[180px] w-full border border-zinc-900 rounded-lg  flex gap-x-2 items-center ml-auto justify-center items-center">
+                                            <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/plusSign.svg"
+                                                alt="">
+                                            Add Diagnosis</button>
+                                        <div class="flex flex-col py-4 px-6 border border-zinc-200 bg-zinc-50 rounded-md hidden"
+                                            id="diagnosis">
+                                            <div>
+                                                <p class="text-sm font-medium text-zinc-900 pb-2">Diagnosis Label</p>
+                                                <div class="py-3 px-4 bg-white border border-zinc-200 rounded-md">
+                                                    <input type="text" placeholder="Enter title"
+                                                        class="text-zinc-400 text-xs focus:outline-none">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pb-6 mt-4">
+                                            <p class="text-xs font-medium text-zinc-800 pb-2">Customer Damage</p>
+                                            <div class="mt-2 flex gap-x-6 items-center">
+                                                <div class="flex items-center">
+                                                    <div
+                                                        class="bg-white dark:bg-gray-100 rounded-full w-3 h-3 flex flex-shrink-0 justify-center items-center relative">
+                                                        <input type="radio" name="radio"
+                                                            class="checkbox appearance-none focus:opacity-100 focus:ring-2 focus:ring-offset-1 focus:ring-zinc-600 focus:outline-none border rounded-full border-gray-400 absolute cursor-pointer w-full h-full checked:border-none">
+                                                        <div
+                                                            class="check-icon hidden bg-black rounded-full w-full h-full z-1">
+                                                        </div>
+                                                    </div>
+                                                    <label class="ml-2 text-xs font-medium text-gray-800">Yes</label>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <div
+                                                        class="bg-white dark:bg-gray-100 rounded-full w-3 h-3 flex flex-shrink-0 justify-center items-center relative">
+                                                        <input type="radio" name="radio"
+                                                            class="checkbox appearance-none focus:opacity-100 focus:ring-2 focus:ring-offset-1 focus:ring-zinc-600 focus:outline-none border rounded-full border-gray-400 absolute cursor-pointer w-full h-full checked:border-none">
+                                                        <div
+                                                            class="check-icon hidden bg-black rounded-full w-full h-full z-1">
+                                                        </div>
+                                                    </div>
+                                                    <label class="ml-2 text-xs font-medium text-gray-800">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pb-6">
+                                            <p class="text-xs font-medium text-zinc-800 pb-2">Repair/replaced</p>
+                                            <div class="mt-2 flex gap-x-6 items-center">
+                                                <div class="flex items-center">
+                                                    <div
+                                                        class="bg-white dark:bg-gray-100 rounded-full w-3 h-3 flex flex-shrink-0 justify-center items-center relative">
+                                                        <input type="radio" name="radio"
+                                                            class="checkbox appearance-none focus:opacity-100 focus:ring-2 focus:ring-offset-1 focus:ring-zinc-600 focus:outline-none border rounded-full border-gray-400 absolute cursor-pointer w-full h-full checked:border-none">
+                                                        <div
+                                                            class="check-icon hidden bg-black rounded-full w-full h-full z-1">
+                                                        </div>
+                                                    </div>
+                                                    <label class="ml-2 text-xs font-medium text-gray-800">Yes</label>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <div
+                                                        class="bg-white dark:bg-gray-100 rounded-full w-3 h-3 flex flex-shrink-0 justify-center items-center relative">
+                                                        <input type="radio" name="radio"
+                                                            class="checkbox appearance-none focus:opacity-100 focus:ring-2 focus:ring-offset-1 focus:ring-zinc-600 focus:outline-none border rounded-full border-gray-400 absolute cursor-pointer w-full h-full checked:border-none">
+                                                        <div
+                                                            class="check-icon hidden bg-black rounded-full w-full h-full z-1">
+                                                        </div>
+                                                    </div>
+                                                    <label class="ml-2 text-xs font-medium text-gray-800">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h1 class="text-xs font-semibold text-zinc-900 mt-9">Cost of repair</h1>
+                                        <div>
+                                            <div
+                                                class="border border-gray-200 rounded-md text-xs font-normal md:max-w-[310px] w-full flex mt-3">
+                                                <div class="bg-zinc-100 py-3 px-4">
+                                                    <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/hash.svg"
+                                                        alt="" />
+                                                </div>
+                                                <input type="number" min="1" max="40" placeholder="Enter order number"
+                                                    class="placeholder-text-zinc-600 required px-4 text-zinc-600 w-full outline-none" />
+                                            </div>
+                                        </div>
+                                        <div class="flex justify-end mt-5">
+                                            <button
+                                                class="bg-zinc-900 md:w-[140px] w-full text-white p-3 rounded-lg  ">Update
+                                                Ticket</button>
+                                        </div>
                                     </div>
                                 </div>
-                            </td>
-                        </tr>
-                        <div class="fixed z-10  top-0  left-0 hidden" id="modal_2">
-                            <div class="flex items-center justify-center pt-4 px-4 pb-20  text-center w-full ">
-                                <div class="fixed inset-0 transition-opacity ">
-                                    <div class="absolute inset-0 bg-gray-900 opacity-75 ">
+                            </div>
+                            <tr class="border-b" id="remove1">
+                                <td
+                                    class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
+                                    0011754380...</td>
+                                <td
+                                    class="lg:text-[10px] xl:text-xs 2xl:text-xs text-[10px] font-medium text-center text-zinc-900 py-2 lg:px-2 2xl:px-4 xl:px-4 px-3 bg-orange-200 rounded-[31px] flex items-center w-[84px] my-[18px] px-4">
+                                    <div>In-queue</div>
+                                </td>
+
+                                <td
+                                    class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
+                                    bill.sanders@example.com</td>
+                                <td
+                                    class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
+                                    Starlight-12
+                                    Poseidon</td>
+                                <td
+                                    class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
+                                    15 May 2020 8:00 am
+                                </td>
+
+                                <td>
+                                    <div class="flex gap-x-5 px-4 py-6">
+                                        <div class="cursor-pointer">
+                                            <img
+                                                src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20%2842%29.svg" />
+                                        </div>
+                                        <div class="cursor-pointer" onclick="toggleModal_2()">
+                                            <img
+                                                src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20%2843%29.svg" />
+                                        </div>
                                     </div>
-                                    <span class="hidden ">&#8203;</span>
-                                    <div class="inline-block    transform transition-all  " role="dialog"
-                                        aria-modal="true" aria-labelledby="modal-headline">
-                                        <div class="md:w-[481px] w-[290px] rounded-xl bg-white mx-auto my-12 px-5 py-5">
-                                            <div onclick="toggleModal_2()"
-                                                class="flex justify-end items-end cursor-pointer">
-                                                <img clas=""
-                                                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/close%20%284%29.svg" />
-                                            </div>
-                                            <div class="">
-                                                <img class="mx-auto "
-                                                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20813185.svg" />
-                                                <h1 class="text-lg text-neutral-800  text-center mt-3 font-semibold">
-                                                    Confirm
-                                                    Delete?
-                                                </h1>
-                                                <h1
-                                                    class="text-sm mt-2 font-normal md:w-[304px] w-full text-center mx-auto text-neutral-600">
-                                                    This
-                                                    action is
-                                                    irreversible and can’t
-                                                    be undone.Do you wish to proceed?
-                                                </h1>
-                                                <div class="flex gap-3 mt-5 justify-center">
-                                                    <button onclick="toggleModal_2()"
-                                                        class="w-[84px] border border-zinc-900 bg-white text-zinc-900 py-2 rounded-lg hover:bg-zinc-900 focus:bg-zinc-900 hover:text-white focus:text-white duration-150 ">Cancel</button>
-                                                    <button onclick="myFunction1();" onclick="toggleModal_2()" ;
-                                                        class="w-[153px] bg-rose-600 hover:bg-rose-700 focus:bg-rose-700 text-white font-medium text-sm py-2 rounded-lg">Yes,
-                                                        Delete Now
-                                                    </button>
+                                </td>
+                            </tr>
+                            <div class="fixed z-10  top-0  left-0 hidden" id="modal_2">
+                                <div class="flex items-center justify-center pt-4 px-4 pb-20  text-center w-full ">
+                                    <div class="fixed inset-0 transition-opacity ">
+                                        <div class="absolute inset-0 bg-gray-900 opacity-75 ">
+                                        </div>
+                                        <span class="hidden ">&#8203;</span>
+                                        <div class="inline-block    transform transition-all  " role="dialog"
+                                            aria-modal="true" aria-labelledby="modal-headline">
+                                            <div
+                                                class="md:w-[481px] w-[290px] rounded-xl bg-white mx-auto my-12 px-5 py-5">
+                                                <div onclick="toggleModal_2()"
+                                                    class="flex justify-end items-end cursor-pointer">
+                                                    <img clas=""
+                                                        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/close%20%284%29.svg" />
+                                                </div>
+                                                <div class="">
+                                                    <img class="mx-auto "
+                                                        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20813185.svg" />
+                                                    <h1
+                                                        class="text-lg text-neutral-800  text-center mt-3 font-semibold">
+                                                        Confirm
+                                                        Delete?
+                                                    </h1>
+                                                    <h1
+                                                        class="text-sm mt-2 font-normal md:w-[304px] w-full text-center mx-auto text-neutral-600">
+                                                        This
+                                                        action is
+                                                        irreversible and can’t
+                                                        be undone.Do you wish to proceed?
+                                                    </h1>
+                                                    <div class="flex gap-3 mt-5 justify-center">
+                                                        <button onclick="toggleModal_2()"
+                                                            class="w-[84px] border border-zinc-900 bg-white text-zinc-900 py-2 rounded-lg hover:bg-zinc-900 focus:bg-zinc-900 hover:text-white focus:text-white duration-150 ">Cancel</button>
+                                                        <button onclick="myFunction1();" onclick="toggleModal_2()" ;
+                                                            class="w-[153px] bg-rose-600 hover:bg-rose-700 focus:bg-rose-700 text-white font-medium text-sm py-2 rounded-lg">Yes,
+                                                            Delete Now
+                                                        </button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <tr class="border-b" id="remove2">
-                            <td
-                                class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
-                                0011754381...</td>
-                            <td
-                                class="lg:text-[10px] xl:text-xs 2xl:text-xs text-[10px] font-medium text-center text-zinc-900 py-2 lg:px-2 2xl:px-4 xl:px-4 px-3 bg-amber-200 rounded-[31px] flex items-center w-[98px] my-[18px] px-4">
-                                <div>In-progress</div>
-                            </td>
+                            <tr class="border-b" id="remove2">
+                                <td
+                                    class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
+                                    0011754381...</td>
+                                <td
+                                    class="lg:text-[10px] xl:text-xs 2xl:text-xs text-[10px] font-medium text-center text-zinc-900 py-2 lg:px-2 2xl:px-4 xl:px-4 px-3 bg-amber-200 rounded-[31px] flex items-center w-[98px] my-[18px] px-4">
+                                    <div>In-progress</div>
+                                </td>
 
-                            <td
-                                class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
-                                michelle.rivera@example.com
-                            </td>
-                            <td
-                                class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
-                                Starlight-12
-                                Poseidon</td>
-                            <td
-                                class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
-                                15 May 2020 9:30 am
-                            </td>
+                                <td
+                                    class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
+                                    michelle.rivera@example.com
+                                </td>
+                                <td
+                                    class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
+                                    Starlight-12
+                                    Poseidon</td>
+                                <td
+                                    class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
+                                    15 May 2020 9:30 am
+                                </td>
 
-                            <td>
-                                <div class="flex gap-x-5 px-4 py-6">
-                                    <div class="cursor-pointer">
-                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20%2842%29.svg" />
+                                <td>
+                                    <div class="flex gap-x-5 px-4 py-6">
+                                        <div class="cursor-pointer">
+                                            <img
+                                                src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20%2842%29.svg" />
+                                        </div>
+                                        <div class="cursor-pointer" onclick="toggleModal_3()">
+                                            <img
+                                                src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20%2843%29.svg" />
+                                        </div>
                                     </div>
-                                    <div class="cursor-pointer" onclick="toggleModal_3()">
-                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20%2843%29.svg" />
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <div class="fixed z-10  top-0  left-0 hidden" id="modal_3">
-                            <div class="flex items-center justify-center pt-4 px-4 pb-20  text-center w-full ">
-                                <div class="fixed inset-0 transition-opacity ">
-                                    <div class="absolute inset-0 bg-gray-900 opacity-75 ">
-                                    </div>
-                                    <span class="hidden ">&#8203;</span>
-                                    <div class="inline-block    transform transition-all  " role="dialog"
-                                        aria-modal="true" aria-labelledby="modal-headline">
-                                        <div class="md:w-[481px] w-[290px] rounded-xl bg-white mx-auto my-12 px-5 py-5">
-                                            <div onclick="toggleModal_3()"
-                                                class="flex justify-end items-end cursor-pointer">
-                                                <img clas=""
-                                                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/close%20%284%29.svg" />
-                                            </div>
-                                            <div class="">
-                                                <img class="mx-auto "
-                                                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20813185.svg" />
-                                                <h1 class="text-lg text-neutral-800  text-center mt-3 font-semibold">
-                                                    Confirm
-                                                    Delete?
-                                                </h1>
-                                                <h1
-                                                    class="text-sm mt-2 font-normal md:w-[304px] w-full text-center mx-auto text-neutral-600">
-                                                    This
-                                                    action is
-                                                    irreversible and can’t
-                                                    be undone.Do you wish to proceed?
-                                                </h1>
-                                                <div class="flex gap-3 mt-5 justify-center">
-                                                    <button onclick="toggleModal_3()"
-                                                        class="w-[84px] border border-zinc-900 bg-white text-zinc-900 py-2 rounded-lg hover:bg-zinc-900 focus:bg-zinc-900 hover:text-white focus:text-white duration-150 ">Cancel</button>
-                                                    <button onclick="myFunction2();" onclick="toggleModal_3()" ;
-                                                        class="w-[153px] bg-rose-600 hover:bg-rose-700 focus:bg-rose-700 text-white font-medium text-sm py-2 rounded-lg">Yes,
-                                                        Delete Now
-                                                    </button>
+                                </td>
+                            </tr>
+                            <div class="fixed z-10  top-0  left-0 hidden" id="modal_3">
+                                <div class="flex items-center justify-center pt-4 px-4 pb-20  text-center w-full ">
+                                    <div class="fixed inset-0 transition-opacity ">
+                                        <div class="absolute inset-0 bg-gray-900 opacity-75 ">
+                                        </div>
+                                        <span class="hidden ">&#8203;</span>
+                                        <div class="inline-block    transform transition-all  " role="dialog"
+                                            aria-modal="true" aria-labelledby="modal-headline">
+                                            <div
+                                                class="md:w-[481px] w-[290px] rounded-xl bg-white mx-auto my-12 px-5 py-5">
+                                                <div onclick="toggleModal_3()"
+                                                    class="flex justify-end items-end cursor-pointer">
+                                                    <img clas=""
+                                                        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/close%20%284%29.svg" />
+                                                </div>
+                                                <div class="">
+                                                    <img class="mx-auto "
+                                                        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20813185.svg" />
+                                                    <h1
+                                                        class="text-lg text-neutral-800  text-center mt-3 font-semibold">
+                                                        Confirm
+                                                        Delete?
+                                                    </h1>
+                                                    <h1
+                                                        class="text-sm mt-2 font-normal md:w-[304px] w-full text-center mx-auto text-neutral-600">
+                                                        This
+                                                        action is
+                                                        irreversible and can’t
+                                                        be undone.Do you wish to proceed?
+                                                    </h1>
+                                                    <div class="flex gap-3 mt-5 justify-center">
+                                                        <button onclick="toggleModal_3()"
+                                                            class="w-[84px] border border-zinc-900 bg-white text-zinc-900 py-2 rounded-lg hover:bg-zinc-900 focus:bg-zinc-900 hover:text-white focus:text-white duration-150 ">Cancel</button>
+                                                        <button onclick="myFunction2();" onclick="toggleModal_3()" ;
+                                                            class="w-[153px] bg-rose-600 hover:bg-rose-700 focus:bg-rose-700 text-white font-medium text-sm py-2 rounded-lg">Yes,
+                                                            Delete Now
+                                                        </button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <tr class="border-b" id="remove3">
-                            <td
-                                class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
-                                0011754382...</td>
-                            <td
-                                class="lg:text-[10px] xl:text-xs 2xl:text-xs text-[10px] font-medium text-center text-zinc-900 py-2 lg:px-2 2xl:px-4 xl:px-4 px-3 bg-emerald-200 rounded-[31px] flex items-center w-[95px] my-[18px] px-4">
-                                <div>Completed</div>
-                            </td>
+                            <tr class="border-b" id="remove3">
+                                <td
+                                    class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
+                                    0011754382...</td>
+                                <td
+                                    class="lg:text-[10px] xl:text-xs 2xl:text-xs text-[10px] font-medium text-center text-zinc-900 py-2 lg:px-2 2xl:px-4 xl:px-4 px-3 bg-emerald-200 rounded-[31px] flex items-center w-[95px] my-[18px] px-4">
+                                    <div>Completed</div>
+                                </td>
 
-                            <td
-                                class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
-                                deanna.curtis@example.com</td>
-                            <td
-                                class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
-                                Starlight-12
-                                Poseidon</td>
-                            <td
-                                class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
-                                15 May 2020 9:30 am
-                            </td>
+                                <td
+                                    class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
+                                    deanna.curtis@example.com</td>
+                                <td
+                                    class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
+                                    Starlight-12
+                                    Poseidon</td>
+                                <td
+                                    class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
+                                    15 May 2020 9:30 am
+                                </td>
 
-                            <td>
-                                <div class="flex gap-x-5 px-4 py-6">
-                                    <div class="cursor-pointer">
-                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20%2842%29.svg" />
+                                <td>
+                                    <div class="flex gap-x-5 px-4 py-6">
+                                        <div class="cursor-pointer">
+                                            <img
+                                                src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20%2842%29.svg" />
+                                        </div>
+                                        <div class="cursor-pointer" onclick="toggleModal_4()">
+                                            <img
+                                                src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20%2843%29.svg" />
+                                        </div>
                                     </div>
-                                    <div class="cursor-pointer" onclick="toggleModal_4()">
-                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20%2843%29.svg" />
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <div class="fixed z-10  top-0  left-0 hidden" id="modal_4">
-                            <div class="flex items-center justify-center pt-4 px-4 pb-20  text-center w-full ">
-                                <div class="fixed inset-0 transition-opacity ">
-                                    <div class="absolute inset-0 bg-gray-900 opacity-75 ">
-                                    </div>
-                                    <span class="hidden ">&#8203;</span>
-                                    <div class="inline-block    transform transition-all  " role="dialog"
-                                        aria-modal="true" aria-labelledby="modal-headline">
-                                        <div class="md:w-[481px] w-[290px] rounded-xl bg-white mx-auto my-12 px-5 py-5">
-                                            <div onclick="toggleModal_4()"
-                                                class="flex justify-end items-end cursor-pointer">
-                                                <img clas=""
-                                                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/close%20%284%29.svg" />
-                                            </div>
-                                            <div class="">
-                                                <img class="mx-auto "
-                                                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20813185.svg" />
-                                                <h1 class="text-lg text-neutral-800  text-center mt-3 font-semibold">
-                                                    Confirm
-                                                    Delete?
-                                                </h1>
-                                                <h1
-                                                    class="text-sm mt-2 font-normal md:w-[304px] w-full text-center mx-auto text-neutral-600">
-                                                    This
-                                                    action is
-                                                    irreversible and can’t
-                                                    be undone.Do you wish to proceed?
-                                                </h1>
-                                                <div class="flex gap-3 mt-5 justify-center">
-                                                    <button onclick="toggleModal_4()"
-                                                        class="w-[84px] border border-zinc-900 bg-white text-zinc-900 py-2 rounded-lg hover:bg-zinc-900 focus:bg-zinc-900 hover:text-white focus:text-white duration-150 ">Cancel</button>
-                                                    <button onclick="myFunction3();" onclick="toggleModal_4()" ;
-                                                        class="w-[153px] bg-rose-600 hover:bg-rose-700 focus:bg-rose-700 text-white font-medium text-sm py-2 rounded-lg">Yes,
-                                                        Delete Now
-                                                    </button>
+                                </td>
+                            </tr>
+                            <div class="fixed z-10  top-0  left-0 hidden" id="modal_4">
+                                <div class="flex items-center justify-center pt-4 px-4 pb-20  text-center w-full ">
+                                    <div class="fixed inset-0 transition-opacity ">
+                                        <div class="absolute inset-0 bg-gray-900 opacity-75 ">
+                                        </div>
+                                        <span class="hidden ">&#8203;</span>
+                                        <div class="inline-block    transform transition-all  " role="dialog"
+                                            aria-modal="true" aria-labelledby="modal-headline">
+                                            <div
+                                                class="md:w-[481px] w-[290px] rounded-xl bg-white mx-auto my-12 px-5 py-5">
+                                                <div onclick="toggleModal_4()"
+                                                    class="flex justify-end items-end cursor-pointer">
+                                                    <img clas=""
+                                                        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/close%20%284%29.svg" />
+                                                </div>
+                                                <div class="">
+                                                    <img class="mx-auto "
+                                                        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20813185.svg" />
+                                                    <h1
+                                                        class="text-lg text-neutral-800  text-center mt-3 font-semibold">
+                                                        Confirm
+                                                        Delete?
+                                                    </h1>
+                                                    <h1
+                                                        class="text-sm mt-2 font-normal md:w-[304px] w-full text-center mx-auto text-neutral-600">
+                                                        This
+                                                        action is
+                                                        irreversible and can’t
+                                                        be undone.Do you wish to proceed?
+                                                    </h1>
+                                                    <div class="flex gap-3 mt-5 justify-center">
+                                                        <button onclick="toggleModal_4()"
+                                                            class="w-[84px] border border-zinc-900 bg-white text-zinc-900 py-2 rounded-lg hover:bg-zinc-900 focus:bg-zinc-900 hover:text-white focus:text-white duration-150 ">Cancel</button>
+                                                        <button onclick="myFunction3();" onclick="toggleModal_4()" ;
+                                                            class="w-[153px] bg-rose-600 hover:bg-rose-700 focus:bg-rose-700 text-white font-medium text-sm py-2 rounded-lg">Yes,
+                                                            Delete Now
+                                                        </button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <tr class="border-b" id="remove4">
-                            <td
-                                class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
-                                0011754383...</td>
-                            <td
-                                class="lg:text-[10px] xl:text-xs 2xl:text-xs text-[10px] font-medium text-center text-zinc-900 py-2 lg:px-2 2xl:px-4 xl:px-4 px-3 bg-emerald-200 rounded-[31px] flex items-center w-[95px] my-[18px] px-4">
-                                <div>Completed</div>
-                            </td>
+                            <tr class="border-b" id="remove4">
+                                <td
+                                    class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
+                                    0011754383...</td>
+                                <td
+                                    class="lg:text-[10px] xl:text-xs 2xl:text-xs text-[10px] font-medium text-center text-zinc-900 py-2 lg:px-2 2xl:px-4 xl:px-4 px-3 bg-emerald-200 rounded-[31px] flex items-center w-[95px] my-[18px] px-4">
+                                    <div>Completed</div>
+                                </td>
 
-                            <td
-                                class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
-                                jackson.graham@example.com
-                            </td>
-                            <td
-                                class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
-                                Starlight-12
-                                Poseidon</td>
-                            <td
-                                class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
-                                15 May 2020 9:30 am
-                            </td>
+                                <td
+                                    class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
+                                    jackson.graham@example.com
+                                </td>
+                                <td
+                                    class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
+                                    Starlight-12
+                                    Poseidon</td>
+                                <td
+                                    class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
+                                    15 May 2020 9:30 am
+                                </td>
 
-                            <td>
-                                <div class="flex gap-x-5 px-4 py-6">
-                                    <div class="cursor-pointer">
-                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20%2842%29.svg" />
+                                <td>
+                                    <div class="flex gap-x-5 px-4 py-6">
+                                        <div class="cursor-pointer">
+                                            <img
+                                                src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20%2842%29.svg" />
+                                        </div>
+                                        <div class="cursor-pointer" onclick="toggleModal_5()">
+                                            <img
+                                                src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20%2843%29.svg" />
+                                        </div>
                                     </div>
-                                    <div class="cursor-pointer" onclick="toggleModal_5()">
-                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20%2843%29.svg" />
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <div class="fixed z-10  top-0  left-0 hidden" id="modal_5">
-                            <div class="flex items-center justify-center pt-4 px-4 pb-20  text-center w-full ">
-                                <div class="fixed inset-0 transition-opacity ">
-                                    <div class="absolute inset-0 bg-gray-900 opacity-75 ">
-                                    </div>
-                                    <span class="hidden ">&#8203;</span>
-                                    <div class="inline-block    transform transition-all  " role="dialog"
-                                        aria-modal="true" aria-labelledby="modal-headline">
-                                        <div class="md:w-[481px] w-[290px] rounded-xl bg-white mx-auto my-12 px-5 py-5">
-                                            <div onclick="toggleModal_5()"
-                                                class="flex justify-end items-end cursor-pointer">
-                                                <img clas=""
-                                                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/close%20%284%29.svg" />
-                                            </div>
-                                            <div class="">
-                                                <img class="mx-auto "
-                                                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20813185.svg" />
-                                                <h1 class="text-lg text-neutral-800  text-center mt-3 font-semibold">
-                                                    Confirm
-                                                    Delete?
-                                                </h1>
-                                                <h1
-                                                    class="text-sm mt-2 font-normal md:w-[304px] w-full text-center mx-auto text-neutral-600">
-                                                    This
-                                                    action is
-                                                    irreversible and can’t
-                                                    be undone.Do you wish to proceed?
-                                                </h1>
-                                                <div class="flex gap-3 mt-5 justify-center">
-                                                    <button onclick="toggleModal_5()"
-                                                        class="w-[84px] border border-zinc-900 bg-white text-zinc-900 py-2 rounded-lg hover:bg-zinc-900 focus:bg-zinc-900 hover:text-white focus:text-white duration-150 ">Cancel</button>
-                                                    <button onclick="myFunction4();" onclick="toggleModal_5()" ;
-                                                        class="w-[153px] bg-rose-600 hover:bg-rose-700 focus:bg-rose-700 text-white font-medium text-sm py-2 rounded-lg">Yes,
-                                                        Delete Now
-                                                    </button>
+                                </td>
+                            </tr>
+                            <div class="fixed z-10  top-0  left-0 hidden" id="modal_5">
+                                <div class="flex items-center justify-center pt-4 px-4 pb-20  text-center w-full ">
+                                    <div class="fixed inset-0 transition-opacity ">
+                                        <div class="absolute inset-0 bg-gray-900 opacity-75 ">
+                                        </div>
+                                        <span class="hidden ">&#8203;</span>
+                                        <div class="inline-block    transform transition-all  " role="dialog"
+                                            aria-modal="true" aria-labelledby="modal-headline">
+                                            <div
+                                                class="md:w-[481px] w-[290px] rounded-xl bg-white mx-auto my-12 px-5 py-5">
+                                                <div onclick="toggleModal_5()"
+                                                    class="flex justify-end items-end cursor-pointer">
+                                                    <img clas=""
+                                                        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/close%20%284%29.svg" />
+                                                </div>
+                                                <div class="">
+                                                    <img class="mx-auto "
+                                                        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20813185.svg" />
+                                                    <h1
+                                                        class="text-lg text-neutral-800  text-center mt-3 font-semibold">
+                                                        Confirm
+                                                        Delete?
+                                                    </h1>
+                                                    <h1
+                                                        class="text-sm mt-2 font-normal md:w-[304px] w-full text-center mx-auto text-neutral-600">
+                                                        This
+                                                        action is
+                                                        irreversible and can’t
+                                                        be undone.Do you wish to proceed?
+                                                    </h1>
+                                                    <div class="flex gap-3 mt-5 justify-center">
+                                                        <button onclick="toggleModal_5()"
+                                                            class="w-[84px] border border-zinc-900 bg-white text-zinc-900 py-2 rounded-lg hover:bg-zinc-900 focus:bg-zinc-900 hover:text-white focus:text-white duration-150 ">Cancel</button>
+                                                        <button onclick="myFunction4();" onclick="toggleModal_5()" ;
+                                                            class="w-[153px] bg-rose-600 hover:bg-rose-700 focus:bg-rose-700 text-white font-medium text-sm py-2 rounded-lg">Yes,
+                                                            Delete Now
+                                                        </button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <tr class="border-b" id="remove5">
-                            <td
-                                class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
-                                0011754384...</td>
-                            <td
-                                class="lg:text-[10px] xl:text-xs 2xl:text-xs text-[10px] font-medium text-center text-zinc-900 py-2 lg:px-2 2xl:px-4 xl:px-4 px-3 bg-cyan-200 rounded-[31px] flex items-center w-[98px] my-[18px] px-4">
-                                <div>In-progress</div>
-                            </td>
+                            <tr class="border-b" id="remove5">
+                                <td
+                                    class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
+                                    0011754384...</td>
+                                <td
+                                    class="lg:text-[10px] xl:text-xs 2xl:text-xs text-[10px] font-medium text-center text-zinc-900 py-2 lg:px-2 2xl:px-4 xl:px-4 px-3 bg-cyan-200 rounded-[31px] flex items-center w-[98px] my-[18px] px-4">
+                                    <div>In-progress</div>
+                                </td>
 
-                            <td
-                                class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
-                                sara.cruz@example.com</td>
-                            <td
-                                class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
-                                Starlight-12
-                                Poseidon</td>
-                            <td
-                                class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
-                                15 May 2020 9:30 am
-                            </td>
+                                <td
+                                    class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
+                                    sara.cruz@example.com</td>
+                                <td
+                                    class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
+                                    Starlight-12
+                                    Poseidon</td>
+                                <td
+                                    class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
+                                    15 May 2020 9:30 am
+                                </td>
 
-                            <td>
-                                <div class="flex gap-x-5 px-4 py-6">
-                                    <div class="cursor-pointer">
-                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20%2842%29.svg" />
+                                <td>
+                                    <div class="flex gap-x-5 px-4 py-6">
+                                        <div class="cursor-pointer">
+                                            <img
+                                                src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20%2842%29.svg" />
+                                        </div>
+                                        <div class="cursor-pointer" onclick="toggleModal_6()">
+                                            <img
+                                                src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20%2843%29.svg" />
+                                        </div>
                                     </div>
-                                    <div class="cursor-pointer" onclick="toggleModal_6()">
-                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20%2843%29.svg" />
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <div class="fixed z-10  top-0  left-0 hidden" id="modal_6">
-                            <div class="flex items-center justify-center pt-4 px-4 pb-20  text-center w-full ">
-                                <div class="fixed inset-0 transition-opacity ">
-                                    <div class="absolute inset-0 bg-gray-900 opacity-75 ">
-                                    </div>
-                                    <span class="hidden ">&#8203;</span>
-                                    <div class="inline-block    transform transition-all  " role="dialog"
-                                        aria-modal="true" aria-labelledby="modal-headline">
-                                        <div class="md:w-[481px] w-[290px] rounded-xl bg-white mx-auto my-12 px-5 py-5">
-                                            <div onclick="toggleModal_6()"
-                                                class="flex justify-end items-end cursor-pointer">
-                                                <img clas=""
-                                                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/close%20%284%29.svg" />
-                                            </div>
-                                            <div class="">
-                                                <img class="mx-auto "
-                                                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20813185.svg" />
-                                                <h1 class="text-lg text-neutral-800  text-center mt-3 font-semibold">
-                                                    Confirm
-                                                    Delete?
-                                                </h1>
-                                                <h1
-                                                    class="text-sm mt-2 font-normal md:w-[304px] w-full text-center mx-auto text-neutral-600">
-                                                    This
-                                                    action is
-                                                    irreversible and can’t
-                                                    be undone.Do you wish to proceed?
-                                                </h1>
-                                                <div class="flex gap-3 mt-5 justify-center">
-                                                    <button onclick="toggleModal_6()"
-                                                        class="w-[84px] border border-zinc-900 bg-white text-zinc-900 py-2 rounded-lg hover:bg-zinc-900 focus:bg-zinc-900 hover:text-white focus:text-white duration-150 ">Cancel</button>
-                                                    <button onclick="myFunction5();" onclick="toggleModal_6()" ;
-                                                        class="w-[153px] bg-rose-600 hover:bg-rose-700 focus:bg-rose-700 text-white font-medium text-sm py-2 rounded-lg">Yes,
-                                                        Delete Now
-                                                    </button>
+                                </td>
+                            </tr>
+                            <div class="fixed z-10  top-0  left-0 hidden" id="modal_6">
+                                <div class="flex items-center justify-center pt-4 px-4 pb-20  text-center w-full ">
+                                    <div class="fixed inset-0 transition-opacity ">
+                                        <div class="absolute inset-0 bg-gray-900 opacity-75 ">
+                                        </div>
+                                        <span class="hidden ">&#8203;</span>
+                                        <div class="inline-block    transform transition-all  " role="dialog"
+                                            aria-modal="true" aria-labelledby="modal-headline">
+                                            <div
+                                                class="md:w-[481px] w-[290px] rounded-xl bg-white mx-auto my-12 px-5 py-5">
+                                                <div onclick="toggleModal_6()"
+                                                    class="flex justify-end items-end cursor-pointer">
+                                                    <img clas=""
+                                                        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/close%20%284%29.svg" />
+                                                </div>
+                                                <div class="">
+                                                    <img class="mx-auto "
+                                                        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20813185.svg" />
+                                                    <h1
+                                                        class="text-lg text-neutral-800  text-center mt-3 font-semibold">
+                                                        Confirm
+                                                        Delete?
+                                                    </h1>
+                                                    <h1
+                                                        class="text-sm mt-2 font-normal md:w-[304px] w-full text-center mx-auto text-neutral-600">
+                                                        This
+                                                        action is
+                                                        irreversible and can’t
+                                                        be undone.Do you wish to proceed?
+                                                    </h1>
+                                                    <div class="flex gap-3 mt-5 justify-center">
+                                                        <button onclick="toggleModal_6()"
+                                                            class="w-[84px] border border-zinc-900 bg-white text-zinc-900 py-2 rounded-lg hover:bg-zinc-900 focus:bg-zinc-900 hover:text-white focus:text-white duration-150 ">Cancel</button>
+                                                        <button onclick="myFunction5();" onclick="toggleModal_6()" ;
+                                                            class="w-[153px] bg-rose-600 hover:bg-rose-700 focus:bg-rose-700 text-white font-medium text-sm py-2 rounded-lg">Yes,
+                                                            Delete Now
+                                                        </button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <tr class="border-b" id="remove6">
-                            <td
-                                class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
-                                0011754384...</td>
-                            <td
-                                class="lg:text-[10px] xl:text-xs 2xl:text-xs text-[10px] font-medium text-center text-zinc-900 py-2 lg:px-2 2xl:px-4 xl:px-4 px-3 bg-sky-200 rounded-[31px] flex items-center w-[98px] my-[18px] px-4">
-                                <div>Completed</div>
-                            </td>
+                            <tr class="border-b" id="remove6">
+                                <td
+                                    class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
+                                    0011754384...</td>
+                                <td
+                                    class="lg:text-[10px] xl:text-xs 2xl:text-xs text-[10px] font-medium text-center text-zinc-900 py-2 lg:px-2 2xl:px-4 xl:px-4 px-3 bg-sky-200 rounded-[31px] flex items-center w-[98px] my-[18px] px-4">
+                                    <div>Completed</div>
+                                </td>
 
-                            <td
-                                class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
-                                willie.jennings@example.com
-                            </td>
-                            <td
-                                class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
-                                Starlight-12
-                                Poseidon</td>
-                            <td
-                                class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
-                                15 May 2020 9:30 am
-                            </td>
+                                <td
+                                    class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
+                                    willie.jennings@example.com
+                                </td>
+                                <td
+                                    class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
+                                    Starlight-12
+                                    Poseidon</td>
+                                <td
+                                    class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
+                                    15 May 2020 9:30 am
+                                </td>
 
-                            <td>
-                                <div class="flex gap-x-5 px-4 py-6">
-                                    <div class="cursor-pointer">
-                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20%2842%29.svg" />
+                                <td>
+                                    <div class="flex gap-x-5 px-4 py-6">
+                                        <div class="cursor-pointer">
+                                            <img
+                                                src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20%2842%29.svg" />
+                                        </div>
+                                        <div class="cursor-pointer" onclick="toggleModal_7()">
+                                            <img
+                                                src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20%2843%29.svg" />
+                                        </div>
                                     </div>
-                                    <div class="cursor-pointer" onclick="toggleModal_7()">
-                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20%2843%29.svg" />
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <div class="fixed z-10  top-0  left-0 hidden" id="modal_7">
-                            <div class="flex items-center justify-center pt-4 px-4 pb-20  text-center w-full ">
-                                <div class="fixed inset-0 transition-opacity ">
-                                    <div class="absolute inset-0 bg-gray-900 opacity-75 ">
-                                    </div>
-                                    <span class="hidden ">&#8203;</span>
-                                    <div class="inline-block    transform transition-all  " role="dialog"
-                                        aria-modal="true" aria-labelledby="modal-headline">
-                                        <div class="md:w-[481px] w-[290px] rounded-xl bg-white mx-auto my-12 px-5 py-5">
-                                            <div onclick="toggleModal_7()"
-                                                class="flex justify-end items-end cursor-pointer">
-                                                <img clas=""
-                                                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/close%20%284%29.svg" />
-                                            </div>
-                                            <div class="">
-                                                <img class="mx-auto "
-                                                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20813185.svg" />
-                                                <h1 class="text-lg text-neutral-800  text-center mt-3 font-semibold">
-                                                    Confirm
-                                                    Delete?
-                                                </h1>
-                                                <h1
-                                                    class="text-sm mt-2 font-normal md:w-[304px] w-full text-center mx-auto text-neutral-600">
-                                                    This
-                                                    action is
-                                                    irreversible and can’t
-                                                    be undone.Do you wish to proceed?
-                                                </h1>
-                                                <div class="flex gap-3 mt-5 justify-center">
-                                                    <button onclick="toggleModal_7()"
-                                                        class="w-[84px] border border-zinc-900 bg-white text-zinc-900 py-2 rounded-lg hover:bg-zinc-900 focus:bg-zinc-900 hover:text-white focus:text-white duration-150 ">Cancel</button>
-                                                    <button onclick="myFunction6();" onclick="toggleModal_7()" ;
-                                                        class="w-[153px] bg-rose-600 hover:bg-rose-700 focus:bg-rose-700 text-white font-medium text-sm py-2 rounded-lg">Yes,
-                                                        Delete Now
-                                                    </button>
+                                </td>
+                            </tr>
+                            <div class="fixed z-10  top-0  left-0 hidden" id="modal_7">
+                                <div class="flex items-center justify-center pt-4 px-4 pb-20  text-center w-full ">
+                                    <div class="fixed inset-0 transition-opacity ">
+                                        <div class="absolute inset-0 bg-gray-900 opacity-75 ">
+                                        </div>
+                                        <span class="hidden ">&#8203;</span>
+                                        <div class="inline-block    transform transition-all  " role="dialog"
+                                            aria-modal="true" aria-labelledby="modal-headline">
+                                            <div
+                                                class="md:w-[481px] w-[290px] rounded-xl bg-white mx-auto my-12 px-5 py-5">
+                                                <div onclick="toggleModal_7()"
+                                                    class="flex justify-end items-end cursor-pointer">
+                                                    <img clas=""
+                                                        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/close%20%284%29.svg" />
+                                                </div>
+                                                <div class="">
+                                                    <img class="mx-auto "
+                                                        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20813185.svg" />
+                                                    <h1
+                                                        class="text-lg text-neutral-800  text-center mt-3 font-semibold">
+                                                        Confirm
+                                                        Delete?
+                                                    </h1>
+                                                    <h1
+                                                        class="text-sm mt-2 font-normal md:w-[304px] w-full text-center mx-auto text-neutral-600">
+                                                        This
+                                                        action is
+                                                        irreversible and can’t
+                                                        be undone.Do you wish to proceed?
+                                                    </h1>
+                                                    <div class="flex gap-3 mt-5 justify-center">
+                                                        <button onclick="toggleModal_7()"
+                                                            class="w-[84px] border border-zinc-900 bg-white text-zinc-900 py-2 rounded-lg hover:bg-zinc-900 focus:bg-zinc-900 hover:text-white focus:text-white duration-150 ">Cancel</button>
+                                                        <button onclick="myFunction6();" onclick="toggleModal_7()" ;
+                                                            class="w-[153px] bg-rose-600 hover:bg-rose-700 focus:bg-rose-700 text-white font-medium text-sm py-2 rounded-lg">Yes,
+                                                            Delete Now
+                                                        </button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <tr class="border-b" id="remove7">
-                            <td
-                                class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
-                                0011754384...</td>
-                            <td
-                                class="lg:text-[10px] xl:text-xs 2xl:text-xs text-[10px] font-medium text-center text-zinc-900 py-2 lg:px-2 2xl:px-4 xl:px-4 px-3 bg-lime-200 rounded-[31px] flex items-center w-[84px] my-[18px] px-4">
-                                <div>In-queue</div>
-                            </td>
+                            <tr class="border-b" id="remove7">
+                                <td
+                                    class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
+                                    0011754384...</td>
+                                <td
+                                    class="lg:text-[10px] xl:text-xs 2xl:text-xs text-[10px] font-medium text-center text-zinc-900 py-2 lg:px-2 2xl:px-4 xl:px-4 px-3 bg-lime-200 rounded-[31px] flex items-center w-[84px] my-[18px] px-4">
+                                    <div>In-queue</div>
+                                </td>
 
-                            <td
-                                class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
-                                jessica.hanson@example.com
-                            </td>
-                            <td
-                                class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
-                                Starlight-12
-                                Poseidon</td>
-                            <td
-                                class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
-                                15 May 2020 9:30 am
-                            </td>
+                                <td
+                                    class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
+                                    jessica.hanson@example.com
+                                </td>
+                                <td
+                                    class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
+                                    Starlight-12
+                                    Poseidon</td>
+                                <td
+                                    class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
+                                    15 May 2020 9:30 am
+                                </td>
 
-                            <td>
-                                <div class="flex gap-x-5 px-4 py-6">
-                                    <div class="cursor-pointer">
-                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20%2842%29.svg" />
+                                <td>
+                                    <div class="flex gap-x-5 px-4 py-6">
+                                        <div class="cursor-pointer">
+                                            <img
+                                                src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20%2842%29.svg" />
+                                        </div>
+                                        <div class="cursor-pointer" onclick="toggleModal_8()">
+                                            <img
+                                                src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20%2843%29.svg" />
+                                        </div>
                                     </div>
-                                    <div class="cursor-pointer" onclick="toggleModal_8()">
-                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20%2843%29.svg" />
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <div class="fixed z-10  top-0  left-0 hidden" id="modal_8">
-                            <div class="flex items-center justify-center pt-4 px-4 pb-20  text-center w-full ">
-                                <div class="fixed inset-0 transition-opacity ">
-                                    <div class="absolute inset-0 bg-gray-900 opacity-75 ">
-                                    </div>
-                                    <span class="hidden ">&#8203;</span>
-                                    <div class="inline-block    transform transition-all  " role="dialog"
-                                        aria-modal="true" aria-labelledby="modal-headline">
-                                        <div class="md:w-[481px] w-[290px] rounded-xl bg-white mx-auto my-12 px-5 py-5">
-                                            <div onclick="toggleModal_8()"
-                                                class="flex justify-end items-end cursor-pointer">
-                                                <img clas=""
-                                                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/close%20%284%29.svg" />
-                                            </div>
-                                            <div class="">
-                                                <img class="mx-auto "
-                                                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20813185.svg" />
-                                                <h1 class="text-lg text-neutral-800  text-center mt-3 font-semibold">
-                                                    Confirm
-                                                    Delete?
-                                                </h1>
-                                                <h1
-                                                    class="text-sm mt-2 font-normal md:w-[304px] w-full text-center mx-auto text-neutral-600">
-                                                    This
-                                                    action is
-                                                    irreversible and can’t
-                                                    be undone.Do you wish to proceed?
-                                                </h1>
-                                                <div class="flex gap-3 mt-5 justify-center">
-                                                    <button onclick="toggleModal_8()"
-                                                        class="w-[84px] border border-zinc-900 bg-white text-zinc-900 py-2 rounded-lg hover:bg-zinc-900 focus:bg-zinc-900 hover:text-white focus:text-white duration-150 ">Cancel</button>
-                                                    <button onclick="myFunction7();" onclick="toggleModal_8()" ;
-                                                        class="w-[153px] bg-rose-600 hover:bg-rose-700 focus:bg-rose-700 text-white font-medium text-sm py-2 rounded-lg">Yes,
-                                                        Delete Now
-                                                    </button>
+                                </td>
+                            </tr>
+                            <div class="fixed z-10  top-0  left-0 hidden" id="modal_8">
+                                <div class="flex items-center justify-center pt-4 px-4 pb-20  text-center w-full ">
+                                    <div class="fixed inset-0 transition-opacity ">
+                                        <div class="absolute inset-0 bg-gray-900 opacity-75 ">
+                                        </div>
+                                        <span class="hidden ">&#8203;</span>
+                                        <div class="inline-block    transform transition-all  " role="dialog"
+                                            aria-modal="true" aria-labelledby="modal-headline">
+                                            <div
+                                                class="md:w-[481px] w-[290px] rounded-xl bg-white mx-auto my-12 px-5 py-5">
+                                                <div onclick="toggleModal_8()"
+                                                    class="flex justify-end items-end cursor-pointer">
+                                                    <img clas=""
+                                                        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/close%20%284%29.svg" />
+                                                </div>
+                                                <div class="">
+                                                    <img class="mx-auto "
+                                                        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20813185.svg" />
+                                                    <h1
+                                                        class="text-lg text-neutral-800  text-center mt-3 font-semibold">
+                                                        Confirm
+                                                        Delete?
+                                                    </h1>
+                                                    <h1
+                                                        class="text-sm mt-2 font-normal md:w-[304px] w-full text-center mx-auto text-neutral-600">
+                                                        This
+                                                        action is
+                                                        irreversible and can’t
+                                                        be undone.Do you wish to proceed?
+                                                    </h1>
+                                                    <div class="flex gap-3 mt-5 justify-center">
+                                                        <button onclick="toggleModal_8()"
+                                                            class="w-[84px] border border-zinc-900 bg-white text-zinc-900 py-2 rounded-lg hover:bg-zinc-900 focus:bg-zinc-900 hover:text-white focus:text-white duration-150 ">Cancel</button>
+                                                        <button onclick="myFunction7();" onclick="toggleModal_8()" ;
+                                                            class="w-[153px] bg-rose-600 hover:bg-rose-700 focus:bg-rose-700 text-white font-medium text-sm py-2 rounded-lg">Yes,
+                                                            Delete Now
+                                                        </button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <tr class="border-b" id="remove8">
-                            <td
-                                class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
-                                0011754384...</td>
-                            <td
-                                class="lg:text-[10px] xl:text-xs 2xl:text-xs text-[10px] font-medium text-center text-zinc-900 py-2 lg:px-2 2xl:px-4 xl:px-4 px-3 bg-violet-200 rounded-[31px] flex items-center w-[95px] my-[18px] px-4">
-                                <div>Completed</div>
-                            </td>
+                            <tr class="border-b" id="remove8">
+                                <td
+                                    class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
+                                    0011754384...</td>
+                                <td
+                                    class="lg:text-[10px] xl:text-xs 2xl:text-xs text-[10px] font-medium text-center text-zinc-900 py-2 lg:px-2 2xl:px-4 xl:px-4 px-3 bg-violet-200 rounded-[31px] flex items-center w-[95px] my-[18px] px-4">
+                                    <div>Completed</div>
+                                </td>
 
-                            <td
-                                class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
-                                debbie.baker@example.com</td>
-                            <td
-                                class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
-                                Starlight-12
-                                Poseidon</td>
-                            <td
-                                class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
-                                15 May 2020 9:30 am
-                            </td>
+                                <td
+                                    class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
+                                    debbie.baker@example.com</td>
+                                <td
+                                    class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
+                                    Starlight-12
+                                    Poseidon</td>
+                                <td
+                                    class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
+                                    15 May 2020 9:30 am
+                                </td>
 
-                            <td>
-                                <div class="flex gap-x-5 px-4 py-6">
-                                    <div class="cursor-pointer">
-                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20%2842%29.svg" />
+                                <td>
+                                    <div class="flex gap-x-5 px-4 py-6">
+                                        <div class="cursor-pointer">
+                                            <img
+                                                src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20%2842%29.svg" />
+                                        </div>
+                                        <div class="cursor-pointer" onclick="toggleModal_9()">
+                                            <img
+                                                src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20%2843%29.svg" />
+                                        </div>
                                     </div>
-                                    <div class="cursor-pointer" onclick="toggleModal_9()">
-                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20%2843%29.svg" />
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <div class="fixed z-10  top-0  left-0 hidden" id="modal_9">
-                            <div class="flex items-center justify-center pt-4 px-4 pb-20  text-center w-full ">
-                                <div class="fixed inset-0 transition-opacity ">
-                                    <div class="absolute inset-0 bg-gray-900 opacity-75 ">
-                                    </div>
-                                    <span class="hidden ">&#8203;</span>
-                                    <div class="inline-block    transform transition-all  " role="dialog"
-                                        aria-modal="true" aria-labelledby="modal-headline">
-                                        <div class="md:w-[481px] w-[290px] rounded-xl bg-white mx-auto my-12 px-5 py-5">
-                                            <div onclick="toggleModal_9()"
-                                                class="flex justify-end items-end cursor-pointer">
-                                                <img clas=""
-                                                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/close%20%284%29.svg" />
-                                            </div>
-                                            <div class="">
-                                                <img class="mx-auto "
-                                                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20813185.svg" />
-                                                <h1 class="text-lg text-neutral-800  text-center mt-3 font-semibold">
-                                                    Confirm
-                                                    Delete?
-                                                </h1>
-                                                <h1
-                                                    class="text-sm mt-2 font-normal md:w-[304px] w-full text-center mx-auto text-neutral-600">
-                                                    This
-                                                    action is
-                                                    irreversible and can’t
-                                                    be undone.Do you wish to proceed?
-                                                </h1>
-                                                <div class="flex gap-3 mt-5 justify-center">
-                                                    <button onclick="toggleModal_9()"
-                                                        class="w-[84px] border border-zinc-900 bg-white text-zinc-900 py-2 rounded-lg hover:bg-zinc-900 focus:bg-zinc-900 hover:text-white focus:text-white duration-150 ">Cancel</button>
-                                                    <button onclick="myFunction8();" onclick="toggleModal_9()" ;
-                                                        class="w-[153px] bg-rose-600 hover:bg-rose-700 focus:bg-rose-700 text-white font-medium text-sm py-2 rounded-lg">Yes,
-                                                        Delete Now
-                                                    </button>
+                                </td>
+                            </tr>
+                            <div class="fixed z-10  top-0  left-0 hidden" id="modal_9">
+                                <div class="flex items-center justify-center pt-4 px-4 pb-20  text-center w-full ">
+                                    <div class="fixed inset-0 transition-opacity ">
+                                        <div class="absolute inset-0 bg-gray-900 opacity-75 ">
+                                        </div>
+                                        <span class="hidden ">&#8203;</span>
+                                        <div class="inline-block    transform transition-all  " role="dialog"
+                                            aria-modal="true" aria-labelledby="modal-headline">
+                                            <div
+                                                class="md:w-[481px] w-[290px] rounded-xl bg-white mx-auto my-12 px-5 py-5">
+                                                <div onclick="toggleModal_9()"
+                                                    class="flex justify-end items-end cursor-pointer">
+                                                    <img clas=""
+                                                        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/close%20%284%29.svg" />
+                                                </div>
+                                                <div class="">
+                                                    <img class="mx-auto "
+                                                        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20813185.svg" />
+                                                    <h1
+                                                        class="text-lg text-neutral-800  text-center mt-3 font-semibold">
+                                                        Confirm
+                                                        Delete?
+                                                    </h1>
+                                                    <h1
+                                                        class="text-sm mt-2 font-normal md:w-[304px] w-full text-center mx-auto text-neutral-600">
+                                                        This
+                                                        action is
+                                                        irreversible and can’t
+                                                        be undone.Do you wish to proceed?
+                                                    </h1>
+                                                    <div class="flex gap-3 mt-5 justify-center">
+                                                        <button onclick="toggleModal_9()"
+                                                            class="w-[84px] border border-zinc-900 bg-white text-zinc-900 py-2 rounded-lg hover:bg-zinc-900 focus:bg-zinc-900 hover:text-white focus:text-white duration-150 ">Cancel</button>
+                                                        <button onclick="myFunction8();" onclick="toggleModal_9()" ;
+                                                            class="w-[153px] bg-rose-600 hover:bg-rose-700 focus:bg-rose-700 text-white font-medium text-sm py-2 rounded-lg">Yes,
+                                                            Delete Now
+                                                        </button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <tr class="" id="remove9">
-                            <td
-                                class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
-                                0011754384...</td>
-                            <td
-                                class="lg:text-[10px] xl:text-xs 2xl:text-xs text-[10px] font-medium text-center text-zinc-900 py-2 lg:px-2 2xl:px-4 xl:px-4 px-3 bg-violet-200 rounded-[31px] flex items-center w-[95px] my-[18px] px-4">
-                                <div>Completed</div>
-                            </td>
+                            <tr class="" id="remove9">
+                                <td
+                                    class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
+                                    0011754384...</td>
+                                <td
+                                    class="lg:text-[10px] xl:text-xs 2xl:text-xs text-[10px] font-medium text-center text-zinc-900 py-2 lg:px-2 2xl:px-4 xl:px-4 px-3 bg-violet-200 rounded-[31px] flex items-center w-[95px] my-[18px] px-4">
+                                    <div>Completed</div>
+                                </td>
 
-                            <td
-                                class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
-                                debbie.baker@example.com</td>
-                            <td
-                                class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
-                                Starlight-12
-                                Poseidon</td>
-                            <td
-                                class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
-                                15 May 2020 9:30 am
-                            </td>
+                                <td
+                                    class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
+                                    debbie.baker@example.com</td>
+                                <td
+                                    class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
+                                    Starlight-12
+                                    Poseidon</td>
+                                <td
+                                    class="xl:text-sm 2xl:text-sm lg:text-xs text-[10px] font-normal text-zinc-600 py-6 px-4">
+                                    15 May 2020 9:30 am
+                                </td>
 
-                            <td>
-                                <div class="flex gap-x-5 px-4 py-6">
-                                    <div class="cursor-pointer">
-                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20%2842%29.svg" />
+                                <td>
+                                    <div class="flex gap-x-5 px-4 py-6">
+                                        <div class="cursor-pointer">
+                                            <img
+                                                src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20%2842%29.svg" />
+                                        </div>
+                                        <div class="cursor-pointer" onclick="toggleModal_10()">
+                                            <img
+                                                src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20%2843%29.svg" />
+                                        </div>
                                     </div>
-                                    <div class="cursor-pointer" onclick="toggleModal_10()">
-                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20%2843%29.svg" />
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <div class="fixed z-10  top-0  left-0 hidden" id="modal_10">
-                            <div class="flex items-center justify-center pt-4 px-4 pb-20  text-center w-full ">
-                                <div class="fixed inset-0 transition-opacity ">
-                                    <div class="absolute inset-0 bg-gray-900 opacity-75 ">
-                                    </div>
-                                    <span class="hidden ">&#8203;</span>
-                                    <div class="inline-block    transform transition-all  " role="dialog"
-                                        aria-modal="true" aria-labelledby="modal-headline">
-                                        <div class="md:w-[481px] w-[290px] rounded-xl bg-white mx-auto my-12 px-5 py-5">
-                                            <div onclick="toggleModal_10()"
-                                                class="flex justify-end items-end cursor-pointer">
-                                                <img clas=""
-                                                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/close%20%284%29.svg" />
-                                            </div>
-                                            <div class="">
-                                                <img class="mx-auto "
-                                                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20813185.svg" />
-                                                <h1 class="text-lg text-neutral-800  text-center mt-3 font-semibold">
-                                                    Confirm
-                                                    Delete?
-                                                </h1>
-                                                <h1
-                                                    class="text-sm mt-2 font-normal md:w-[304px] w-full text-center mx-auto text-neutral-600">
-                                                    This
-                                                    action is
-                                                    irreversible and can’t
-                                                    be undone.Do you wish to proceed?
-                                                </h1>
-                                                <div class="flex gap-3 mt-5 justify-center">
-                                                    <button onclick="toggleModal_10()"
-                                                        class="w-[84px] border border-zinc-900 bg-white text-zinc-900 py-2 rounded-lg hover:bg-zinc-900 focus:bg-zinc-900 hover:text-white focus:text-white duration-150 ">Cancel</button>
-                                                    <button onclick="myFunction9();" onclick="toggleModal_10()" ;
-                                                        class="w-[153px] bg-rose-600 hover:bg-rose-700 focus:bg-rose-700 text-white font-medium text-sm py-2 rounded-lg">Yes,
-                                                        Delete Now
-                                                    </button>
+                                </td>
+                            </tr>
+                            <div class="fixed z-10  top-0  left-0 hidden" id="modal_10">
+                                <div class="flex items-center justify-center pt-4 px-4 pb-20  text-center w-full ">
+                                    <div class="fixed inset-0 transition-opacity ">
+                                        <div class="absolute inset-0 bg-gray-900 opacity-75 ">
+                                        </div>
+                                        <span class="hidden ">&#8203;</span>
+                                        <div class="inline-block    transform transition-all  " role="dialog"
+                                            aria-modal="true" aria-labelledby="modal-headline">
+                                            <div
+                                                class="md:w-[481px] w-[290px] rounded-xl bg-white mx-auto my-12 px-5 py-5">
+                                                <div onclick="toggleModal_10()"
+                                                    class="flex justify-end items-end cursor-pointer">
+                                                    <img clas=""
+                                                        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/close%20%284%29.svg" />
+                                                </div>
+                                                <div class="">
+                                                    <img class="mx-auto "
+                                                        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Frame%20813185.svg" />
+                                                    <h1
+                                                        class="text-lg text-neutral-800  text-center mt-3 font-semibold">
+                                                        Confirm
+                                                        Delete?
+                                                    </h1>
+                                                    <h1
+                                                        class="text-sm mt-2 font-normal md:w-[304px] w-full text-center mx-auto text-neutral-600">
+                                                        This
+                                                        action is
+                                                        irreversible and can’t
+                                                        be undone.Do you wish to proceed?
+                                                    </h1>
+                                                    <div class="flex gap-3 mt-5 justify-center">
+                                                        <button onclick="toggleModal_10()"
+                                                            class="w-[84px] border border-zinc-900 bg-white text-zinc-900 py-2 rounded-lg hover:bg-zinc-900 focus:bg-zinc-900 hover:text-white focus:text-white duration-150 ">Cancel</button>
+                                                        <button onclick="myFunction9();" onclick="toggleModal_10()" ;
+                                                            class="w-[153px] bg-rose-600 hover:bg-rose-700 focus:bg-rose-700 text-white font-medium text-sm py-2 rounded-lg">Yes,
+                                                            Delete Now
+                                                        </button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
                     </tbody>
                 </table>
             </div>
@@ -1803,6 +2022,14 @@
 
         .tab {
             display: none;
+        }
+
+        .checkbox:checked {
+            border: none;
+        }
+
+        .checkbox:checked+.check-icon {
+            display: flex;
         }
     </style>
     <script>
@@ -1889,7 +2116,14 @@
             document.getElementById('modal_10').classList.toggle('hidden')
             element.remove();
         }
-
+        function myFunction10() {
+            const element = document.getElementById("remove10");
+            element.remove();
+        }
+        function myFunction11() {
+            const element = document.getElementById("remove11");
+            element.remove();
+        }
         var currentTab = 0;
         showTab(currentTab);
         function showTab(n) {
